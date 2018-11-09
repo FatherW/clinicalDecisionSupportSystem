@@ -1,0 +1,38 @@
+<!--index.ejs-->
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Clinical Decision Support System (CDSS)</h1>
+        <p class="lead">HKBU Event Management System is a web-based system for department and societies to
+            broadcast
+            events and activities as well as registration</p>
+    </div>
+</div>
+<div class="row col-12">
+<% persons.forEach( function(model) { %>
+<div class="card col-4" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            Disease： <%= model.diseaseName %>
+        </h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            Patient： <%= model.patientName %>
+        </h6>
+        <p class="card-text">
+            <%= model.fullDescription %>
+        </p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
+<% }); %>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>

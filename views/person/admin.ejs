@@ -1,0 +1,14 @@
+<!--admin.ejs-->
+<table class="table">
+    <% persons.forEach( function(model) { %>
+    <tr>
+        <td>
+            <%= model.id %>
+        </td>
+        <td><a class="nav-item ns-link active" href="update/<%= model.id %> ">
+                <%= model.eventName %>
+        </td>
+    </tr>
+    <% }); %>
+
+</table>
