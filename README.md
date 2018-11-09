@@ -1,4 +1,4 @@
-# Event management system 2018
+# Clinical Decision Management System 2018
 
 a [Sails v1](https://sailsjs.com) application<br>
 MUST choose "2" while using sails lift to open the server, because bootstrap automatically generate new data in the .tmp file
