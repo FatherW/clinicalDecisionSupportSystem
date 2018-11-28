@@ -1,48 +1,57 @@
 <!--create.ejs-->
 <div class="row col-12">
-    <br>   
-        <form action="/person/create" method="POST">
-            <div class="row">
-                <div class="form-group col-6">
-                    <label>Patient Name</label>
-                    <input type="text" class="form-control" name="Person[patientName]" required>
-                </div>
-                <div class="col-6">
-                        <span>Disease Name</span>
-                        <select class="form-control" name="Person[diseaseName]">
-                            <option value="nan">Please select a disease:</option>
-                            <option value="Tuberculosis">Tuberculosis</option>
-                            <option value="Lung Cancer">Lung Cancer</option>
-                        </select>
-                    </div>
-                <div class="form-group col-6">
-                    <label>Full Description</label>
-                    <input type="text" class="form-control" name="Person[fullDescription]" required>
-                </div>
-                <!--Datepicker-->
-                <div class="form-group col-6" >
-                        <tr><label>Event Date</label></tr>
-                        <tr><input data-provide="datepicker" type="text" class="form-control"  name="Person[eventDate]"
-                                required></tr>
-                    </div>
-                <!--Datepicker END-->
-                <div class="form-group col-6">
-                    <label>Year of Disease</label>
-                    <input type="text" class="form-control" name="Person[time]" required>
-                </div>
-                <div class="form-group col-6">
-                    <label>Quota</label>
-                    <input type="number" class="form-control" name="Person[age]">
-                </div>
-                <div class="form-group col-6">
-                <!--Highlight Event-->
-                <input name="box" type="checkbox" value="Highlight Event" checked>
-                <label>Highlight Event</label>
-                <!--Highlight Event-->
-                <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-        </form>
-    
+    <br>
+    <form action="/person/create" method="POST">
+        <div class="row">
+            <div class="form-group col-6">
+                <label>Patient Name</label>
+                <input type="text" class="form-control" name="Person[patientName]" required>
+            </div>
+            <div class="form-group col-6">
+                <label>Patient Age</label>
+                <input type="text" class="form-control" name="Person[age]" required>
+            </div>
+            <div class="col-6">
+                <span>Smoking?</span>
+                <select class="form-control" name="Person[smoking]">
+                    <option value="nan">Please select a smoking:</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <span>Asthma?</span>
+                <select class="form-control" name="Person[Asthma]">
+                    <option value="nan">Please select a Asthma:</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <span>PAD?</span>
+                <select class="form-control" name="Person[PAD]">
+                    <option value="nan">Please select a PAD:</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+        
+            <div class="col-6">
+                <span>sizeOfTheOriginalTumour</span>
+                <select class="form-control" name="Person[sixMonthsMI]">
+                    <option value="nan">Please select a sixMonthsMI:</option>
+                    <option value="1">11</option>
+                    <option value="2">12</option>
+                    <option value="3">13</option>
+                    <option value="4">14</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
+
 </div>
 <script>
     $('.datepicker').datepicker({

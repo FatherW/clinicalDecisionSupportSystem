@@ -11,16 +11,8 @@ module.exports = {
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-    name: {
-      type: "string"
-    },
-    
+    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝   
     patientName: {
-      type: "string"
-    },
-
-    diseaseName: {
       type: "string"
     },
 
@@ -28,44 +20,21 @@ module.exports = {
       type: "number"
     },
 
-    eventName: {
-      type: "text"
+    smoking: {
+      type: "boolean"
     },
 
-    shortDescription: {
-      type: "text"
+    Asthma: {
+      type: "boolean"
     },
 
-    fullDescription: {
-      type: "text"
+    PAD: {
+      type: "boolean"
     },
 
-    imageURL: {
-      type: "text"
+    sizeOfTheOriginalTumour: {
+      type: "string"
     },
-
-    organizer: {
-      type: "text"
-    },
-
-    eventDate: {
-      type: 'string',
-      columnType: 'date'
-    },
-
-    time: {
-      type: "text"
-    }, 
-
-    startDate: {
-      type: 'string',
-      columnType: 'date'
-    }, 
-
-    endDate: {
-      type: 'string',
-      columnType: 'date'
-    }
 
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

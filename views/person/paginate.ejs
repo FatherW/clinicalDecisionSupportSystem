@@ -27,7 +27,7 @@
     <div class="row">
         <% persons.forEach( function(model) { %>
         <div class="card col-12 col-sm-6 col-lg-4 col-xl-4" style="width: 18rem;">
-            <img class="card-img-top" src="<%= model.imageURL %>" alt="Card image cap">
+            <!-- <img class="card-img-top" src="<%= model.imageURL %>" alt="Card image cap"> -->
             <div class="card-body">
                 <!-- 
                     <a class="nav-item ns-link active" href="person/detail/<%= model.id %> ">
@@ -35,11 +35,23 @@
                 <span class="sr-only">(current)</span>
             </a> 
         -->
-                <a class="card-title nav-item ns-link active" href="/person/detail/<%= model.id %>" >
-                    <%= model.eventName %>
+                <a class="card-title nav-item ns-link active" href="/person/detail/<%= model.id %>">
+                    <%= model.patientName %>
                 </a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <p class="card-text"><li class="list-group-item">
+                        Age:
+                        <%= model.age %>
+                    </li>
+                    <li class="list-group-item">Smoking:
+                        <%= model.smoking %>
+                    </li>
+                    <li class="list-group-item">Asthma:
+                        <%= model.Asthma %>
+                    </li>
+                    <li class="list-group-item">PAD:
+                        <%= model.PAD %>
+                    </li>
+                    <li class="list-group-item">sizeOfTheOriginalTumour: 13</li></p>
 
             </div>
         </div>
@@ -50,45 +62,45 @@
         <div class="card col-12 col-sm-6 col-lg-4 col-xl-4" style="width: 18rem;">
             <form action="/person/paginate">
                 <div class="form-group">
-                    <label>Event Name</label>
-                    <input type="text" class="form-control" name="eventName">
+                    <label>Patient Name</label>
+                    <input type="text" class="form-control" name="patientName">
                 </div>
                 <div>
-                    <span>Organizer</span>
-                    <select class="form-control" onchange="teamSelected(this.value)" name="organizer">
-                        <option value="nan">Please select a organizer:</option>
-                        <option value="AIS">AIS</option>
-                        <option value="ITM">ITM</option>
-                    </select>
-                </div>
-                <!--Datepicker-->
-                <div class="form-group">
-                    <label>Start Date</label>
-                    <input data-provide="datepicker" type="text" class="form-control" name="startDate">
-                </div>
-                <!--Datepicker END-->
-                <!--Datepicker-->
-                <div class="form-group">
-                    <label>End Date</label>
-                    <input data-provide="datepicker" type="text" class="form-control" name="endDate">
-                </div>
-                <!--Datepicker END-->
-                <div>
-                    <span>Venue</span>
-                    <select class="form-control" onchange="teamSelected(this.value)">
-                        <option value="nan">Please select a Venue:</option>
-                        <option value="RRS">RRS</option>
-                        <option value="FSC">FSC</option>
+                    <label>Smoking</label>
+                    <select class="form-control" name="smoking">
+                        <option value="nan">Please select a smoking:</option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
                     </select>
                 </div>
                 <div>
-                    <span>Quota</span><br>
-                    Filter by price interval: <br>
-                    <b>$ 10</b>
-                    <input id="ex21" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000"
-                        data-slider-step="5" data-slider-value="[250,450]" />
-                    <b>$ 1000</b>
+                    <span>Asthma?</span>
+                    <select class="form-control" name="Asthma">
+                        <option value="nan">Please select a Asthma:</option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
                 </div>
+                <div>
+                    <span>PAD?</span>
+                    <select class="form-control" name="PAD">
+                        <option value="nan">Please select a PAD:</option>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div>
+                    <span>sizeOfTheOriginalTumour</span>
+                    <select class="form-control" name="sixMonthsMI">
+                        <option value="nan">Please select a sixMonthsMI:</option>
+                        <option value="1">11</option>
+                        <option value="2">12</option>
+                        <option value="3">13</option>
+                        <option value="4">14</option>
+                    </select>
+                </div>
+
                 <br>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

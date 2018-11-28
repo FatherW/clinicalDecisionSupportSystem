@@ -113,35 +113,23 @@ module.exports = {
         const qPage = Math.max(req.query.page - 1, 0) || 0;
         const numOfItemsPerPage = 2;
 
-        const qName = req.query.eventName || "";
-        const qStartDate = req.query.startDate || "";
-        const qEndDate = req.query.endDate || "";
-
-
-        console.log("qstartdate" + qStartDate + "enddate" + qEndDate);
+        const qName = req.query.patientName || "";
+       
         var models = await Person.find({
             limit: numOfItemsPerPage,
             skip: numOfItemsPerPage * qPage,
 
             where: {
-                eventName: { contains: qName },
-                or: [
-                    { eventDate: { '>=': qStartDate } },
-                    { eventDate: { '<=': qEndDate } },
-                ],
+                patientName: { contains: qName },
             },
-            sort: 'eventName'
+            sort: 'patientName'
         });
         console.log("length:%s", models.length);
 
         var search = await Person.find({
 
             where: {
-                eventName: { contains: qName },
-                or: [
-                    { eventDate: { '>=': qStartDate } },
-                    { eventDate: { '<=': qEndDate } },
-                ],
+                patientName: { contains: qName },
             },
         });
 

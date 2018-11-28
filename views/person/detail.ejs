@@ -2,28 +2,26 @@
     <div class="col-12 col-sm-12 col-lg-12 col-xl-12 media form－inline">
         <div class="media-left media-middle media-body">
             <h4 class="media-heading">
-                <%= person.eventName %>
+                <%= person.patientName %>
             </h4>
-            <a href="#">
-                <img class='img-fluid' src="<%= person.imageURL %>""  />
-            </a>
         </div>
-        <div class="media-body">
+        <div class="
+                    media-body">
                 <ul class="list-group"><br><br>
                     <li class="list-group-item">
-                        <%= person.fullDescription %>
+                        Age:
+                        <%= person.age %>
                     </li>
-                    <li class="list-group-item">Organizer:
-                        <%= person.organizer %>
+                    <li class="list-group-item">Smoking:
+                        <%= person.smoking %>
                     </li>
-                    <li class="list-group-item">Date:
-                        <%= person.eventDate %>
+                    <li class="list-group-item">Asthma:
+                        <%= person.Asthma %>
                     </li>
-                    <li class="list-group-item">Time:
-                        <%= person.time %>
+                    <li class="list-group-item">PAD:
+                        <%= person.PAD %>
                     </li>
-                    <li class="list-group-item">Venue: Hall</li>
-                    <li class="list-group-item">Quota: 100</li>
+                    <li class="list-group-item">sizeOfTheOriginalTumour: 13</li>
                 </ul>
         </div>
     </div>
