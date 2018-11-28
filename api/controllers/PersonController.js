@@ -18,7 +18,32 @@ module.exports = {
 
         await Person.create(req.body.Person);
 
-        return res.ok("Successfully created!");
+        var age = req.body.Person.age;
+        var smoking = req.body.Person.smoking;
+        var asthma= req.body.Person.Asthma;
+        var pad = req.body.Person.PAD;
+        var size = req.body.Person.sizeOfTheOriginalTumour;
+        var deathRate1 = 0;
+        var deathRate2 = 0;
+        var deathRate3 = 0;
+        var deathRate4 = 0;
+
+
+        if(smoking) deathRate1 = 0.9;
+        else if(!smoking) deathRate1 = 0.8;
+
+        if(asthma) deathRate2 = 0.9;
+        else if(!asthma) deathRate2 = 0.8;
+
+        if(pad) deathRate3 = 0.9;
+        else if(!pad) deathRate3 = 0.8;
+
+        if(size) deathRate4 = 0.9;
+        else if(!size) deathRate4 = 0.8;
+
+        var deathRate = deathRate1*deathRate2*deathRate3*deathRate4*100;
+
+        return res.ok("i can "+ deathRate +"% guarantee you will die in 1 year");
     },
 
     // action - index
