@@ -28,21 +28,21 @@ module.exports = {
         var deathRate3 = 0;
         var deathRate4 = 0;
 
-
         if(smoking) deathRate1 = 0.9924;
-        else if(!smoking) deathRate1 = 0.8;
+        else if(!smoking) deathRate1 = 0.98;
 
         if(asthma) deathRate2 = 0.9734;
-        else if(!asthma) deathRate2 = 0.8;
+        else if(!asthma) deathRate2 = 0.92;
 
         if(pad) deathRate3 = 0.9822;
-        else if(!pad) deathRate3 = 0.8;
+        else if(!pad) deathRate3 = 0.85;
 
         if(size) deathRate4 = 1;
-        else if(!size) deathRate4 = 0.8;
+        else if(!size) deathRate4 = 0.867;
 
         var deathRate = deathRate1*deathRate2*deathRate3*deathRate4*100;
-
+        deathRate = deathRate.toFixed(2); // 保留两位小数
+        // deathRate = Math.round(deathRate);  保留整数
         return res.ok("i can "+ deathRate +"% guarantee you will die in 1 year");
     },
 
