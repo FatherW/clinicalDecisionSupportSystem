@@ -29,16 +29,16 @@ module.exports = {
         var deathRate4 = 0;
 
 
-        if(smoking) deathRate1 = 0.9;
+        if(smoking) deathRate1 = 0.9924;
         else if(!smoking) deathRate1 = 0.8;
 
-        if(asthma) deathRate2 = 0.9;
+        if(asthma) deathRate2 = 0.9734;
         else if(!asthma) deathRate2 = 0.8;
 
-        if(pad) deathRate3 = 0.9;
+        if(pad) deathRate3 = 0.9822;
         else if(!pad) deathRate3 = 0.8;
 
-        if(size) deathRate4 = 0.9;
+        if(size) deathRate4 = 1;
         else if(!size) deathRate4 = 0.8;
 
         var deathRate = deathRate1*deathRate2*deathRate3*deathRate4*100;
