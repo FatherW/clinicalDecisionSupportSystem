@@ -2,56 +2,31 @@
 
 
 This project is a health decision-making system.
-
 <br>
-
 HKBU COMP7420 final project.
-
 <br>
-
 The data are used to predict the one-year mortality of lung cancer.
-
 <br>
-
 To run this project, after downloading and decompressing, you need  to install dependencies in terminal, which is command "npm install".
-
 <br>
-
 Enter "npm audix fix" once during installation. It can ensure that the environment is installed correctly.
-
 <br>
-
 When using "sails lift" to run a program, be sure to select "2" to open it so that drop discards all existing data, otherwise the server will not open correctly.
-
 <br>
-
 When the program is opened, 4 new patients are created in the create interface. Go go create page and clicking the Create button, system returns the mortality rate within a year. The sentences are not friendly. Don't let patients use the system directly
-
 <br>
-
 Unfortunately, the system does not change the mortality algorithm by increasing the number of patients.
-
 <br>
-
 It is worth mentioning that the lung cancer data is from UCI, which is a very reliable lung cancer data center. The source of the data is in the following URL.
-
 <br>
 <a href=https://archive.ics.uci.edu/ml/datasets/Thoracic+Surgery+Data>https://archive.ics.uci.edu/ml/datasets/Thoracic+Surgery+Data</a>
-
 <br>
-
 According to the above 400 patient data. We are quite sure that this data is reliable.
-
 <br>
-
 Therefore, the calculated mortality rate in one year is very useful.
-
 <br>
-
 The report of this project has been uploaded, and PPT has also been uploaded.
-
 <br>
-
 If you have any suggestions, please email 18436617@life.hkbu.edu.hk
 
 # 健康决策辅助系统（sails v1.1.0）
