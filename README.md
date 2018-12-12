@@ -27,7 +27,7 @@ Therefore, the calculated mortality rate in one year is very useful.
 <br>
 The report of this project has been uploaded, and PPT has also been uploaded.
 <br>
-If you have any suggestions, please email 18436617@life.hkbu.edu.hk
+If you have any suggestions, please email 18436617@life.hkbu.edu.hk.
 
 # 健康决策辅助系统（sails v1.1.0）
 
@@ -43,7 +43,7 @@ If you have any suggestions, please email 18436617@life.hkbu.edu.hk
 <br>
 当使用sails lift来运行程序时，一定要选择2来打开，这样可以drop抛弃所有的现存数据，否则服务器将无法正确打开。
 <br>
-打开程序后，在create界面创建新患者时。点击create按钮就会返回一年内的死亡率。其中语句并不友好。不要让患者直接使用该系统
+打开程序后，在create界面创建新患者时。点击create按钮就会返回一年内的死亡率。其中语句并不友好。不要让患者直接使用该系统。
 <br>
 可惜的是，本系统并没有通过增加病人来改变其中的死亡率算法。
 <br>
@@ -57,4 +57,4 @@ If you have any suggestions, please email 18436617@life.hkbu.edu.hk
 <br>
 本项目的报告已经上传，与此同时，PPT也上传。
 <br>
-如果有建议欢迎电子邮件18436617@life.hkbu.edu.hk联系
+如果有建议欢迎电子邮件18436617@life.hkbu.edu.hk联系。
