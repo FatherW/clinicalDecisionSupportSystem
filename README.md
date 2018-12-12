@@ -54,7 +54,7 @@ The report of this project has been uploaded, and PPT has also been uploaded.
 
 If you have any suggestions, please email 18436617@life.hkbu.edu.hk
 
-# clinicalDecisionSupportSystem（sails v1.1.0）
+# 健康决策辅助系统（sails v1.1.0）
 
 本项目是一款健康决策系统。
 <br>
